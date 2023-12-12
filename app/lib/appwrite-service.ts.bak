@@ -1,0 +1,25 @@
+import {
+  Account,
+  Client,
+  ID,
+  Databases, 
+  Permission, 
+  Role,
+  Appwrite
+} from "appwrite";
+// import { useUserStore } from "./userStore";
+
+	const client = new Appwrite();
+	export const databases = new Databases(client);
+
+	client
+	.setEndpoint("https://cloud.appwrite.io/v1")
+	.setProject('65267cb88de1f9a522e7')
+	.setKey('9cca3f7bbfc010daf476018296668ada5c1f6532d157de3f1df1423756955b0598578993406eb2a57f5cb81a81b7b3a172880acfd101e4246c23c1802242d533050238199784bb782e65b7153914b96778a5a63d69b619299707387a4d8b03cde7e13c02dc4d0ec63859ad651457d5280abb3a835f0b63de801b044d4b1bbbdf');
+//const promise = databases.getDocument('652e39e4abfb8d628d46', '652e39f5db250173e640', '652e73a29c2cf2d06735');
+
+export const appwrite = {
+  client,
+  account: new Account(client),
+  ID,
+};

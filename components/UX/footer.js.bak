@@ -1,0 +1,26 @@
+import React from 'react'
+import { View, Text, TextInput, FlatList, StyleSheet, Image, SafeAreaView, ScrollView, StatusBar, TouchableOpacity, Alert } from 'react-native';
+
+export default function Footer() {
+  return (
+		<View style={styles.footer}>
+			<View style={styles.layout}>
+				<View>					
+					<Text style={{ color: '#560CCE', }}>MOVEYOURKNEE PANNELLO DI CONTROLLO</Text>  
+				</View>
+			</View>
+		</View>	
+  );
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+ layout: {
+	marginHorizontal: 200,
+  },
+  footer: {
+    backgroundColor: 'lightgrey',
+    padding: 40
+  }
+});

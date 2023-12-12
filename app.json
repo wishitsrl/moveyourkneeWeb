@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "MoveyourKnew",
+    "slug": "MoveyourKnew",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/MARCHIO/PNG/MARCHIOVIOLA.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/MARCHIO/PNG/MARCHIOBIANCO.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/MARCHIO/PNG/MARCHIOVIOLA.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.gio.casale.MoveyourKnew"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/MARCHIO/PNG/MARCHIOVIOLA.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9920c022-b693-44d9-8172-6e3c3b39a921"
+      }
+    }
+  }
+}
